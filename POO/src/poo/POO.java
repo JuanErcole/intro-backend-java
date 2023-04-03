@@ -1,19 +1,15 @@
 package poo;
 
 import Entidades.Person;
+import service.PersonaService;
 
 public class POO {
 
     public static void main(String[] args) {
         
-        Person Persona1 = new Person("Juan", "Ercole", 28);
+        PersonaService personService = new PersonaService();
         
-        Person Persona2 = new Person();
-        
-        Persona1.setName("Alan");
-        Persona2.setName("Juan");
-        
-        System.out.println(Persona2.getName());
+        personService.showDates(new Person("Juan", "Ercole", 28));
         
     }
     

@@ -2,10 +2,26 @@ package Entidades;
 
 public class Person {
 
+    // ATRIBUTOS
     public String name;
     public String lastName;
     public int age;
 
+    
+    
+    // CONSTRUCTORES
+    public Person() {
+        
+    }
+    
+    public Person(String name, String lastName, int age) {
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
+    }
+    
+    
+    // METODOS
     public String getName() {
         return name;
     }
@@ -30,14 +46,8 @@ public class Person {
         this.age = age;
     }
 
-    public Person() {
-        
-    }
-    public Person(String name, String lastName, int age) {
-        this.name = name;
-        this.lastName = lastName;
-        this.age = age;
-    }
+    
+    
     
     
     
