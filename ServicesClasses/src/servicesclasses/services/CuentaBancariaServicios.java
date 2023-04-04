@@ -6,16 +6,21 @@ import servicesclasses.entities.CuentaBancaria;
 
 public class CuentaBancariaServicios{
 
+    // CREAR CUENTA
     public CuentaBancaria createAccount(){
         
         Scanner read = new Scanner(System.in);
         
         System.out.println("ingrese su DNI");
         long dni = read.nextLong();
+        
+        
+        
         System.out.println("Cuenta creada con exito");
-        return new CuentaBancaria();   
+        return new CuentaBancaria(dni );   
     }
     
+    // INGRESAR DINERO
     public void ingresar(CuentaBancaria cuentaBanc, double cantidad){
        
         double saldoActual = cuentaBanc.getSaldoActual();
@@ -29,7 +34,7 @@ public class CuentaBancariaServicios{
         if ( saldoActual < cantidad){
             System.out.println("Saldo insuficiente");
             return;
-        }
+         }
         
         cuentaBanc.setSaldoActual(saldoActual - cantidad);
     }

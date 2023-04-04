@@ -18,10 +18,8 @@ public class CuentaBancaria {
         saldoActual = 0;
     }
 
-    public CuentaBancaria( long dniCliente, double saldoActual) {
-        this.dniCliente = dniCliente;
-        this.saldoActual = saldoActual;
-        
+    public CuentaBancaria( long dniCliente) {
+        this.dniCliente = dniCliente;        
         numCuenta = uid.getAndIncrement();
         saldoActual = 0;
     }
