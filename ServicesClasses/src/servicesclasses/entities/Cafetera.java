@@ -11,9 +11,8 @@ public class Cafetera {
     public Cafetera() {
     }
 
-    public Cafetera(int capacidadMaxima, int cantidadActual) {
+    public Cafetera(int capacidadMaxima) {
         this.capacidadMaxima = capacidadMaxima;
-        this.cantidadActual = cantidadActual;
     }
     
     // METODOS 
