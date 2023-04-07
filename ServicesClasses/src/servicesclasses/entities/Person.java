@@ -3,19 +3,30 @@ package servicesclasses.entities;
 
 public class Person {
 
+    //ATRIBUTOS 
     private String name;
     private int age;
-    private char sexo;
+    private char sex;
+    private double weigth;
+    private double height;
+    
 
-    public Person(String name, int age, char sexo) {
+    //CONSTRUCTORES
+    
+
+    public Person(String name, int age, char sex, double weigth, double height) {
         this.name = name;
         this.age = age;
-        this.sexo = sexo;
+        this.sex = sex;
+        this.weigth = weigth;
+        this.height = height;
     }
 
     public Person() {
     }
-
+    
+    
+    // METODOS
     public String getName() {
         return name;
     }
@@ -33,14 +44,34 @@ public class Person {
     }
 
     public char getSexo() {
-        return sexo;
+        return sex;
     }
 
     public void setSexo(char sexo) {
-        this.sexo = sexo;
+        this.sex = sexo;
+    }
+
+    public double getWeigth() {
+        return weigth;
+    }
+
+    public void setWeigth(double weigth) {
+        this.weigth = weigth;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
     }
     
     
-    
-    
 }
+
+
+
+
+
+
