@@ -2,9 +2,11 @@ package servicesclasses;
 
 import servicesclasses.entities.Cafetera;
 import servicesclasses.entities.CuentaBancaria;
+import servicesclasses.entities.NIF;
 import servicesclasses.entities.Person;
 import servicesclasses.services.CafeteraServices;
 import servicesclasses.services.CuentaBancariaServicios;
+import servicesclasses.services.NifService;
 import servicesclasses.services.PersonService;
 
 public class ServicesClasses {
@@ -21,7 +23,7 @@ public class ServicesClasses {
         cbs.consultarDatos(c1);
          */
         
-        /*        
+        /* ej 2       
         CafeteraServices cs = new CafeteraServices();
         Cafetera c = new Cafetera(1000);        
         cs.llenarCafetera(c);
@@ -30,54 +32,50 @@ public class ServicesClasses {
         cs.vaciarCafetera(c);
          */
         
-        
+        /* ej 3
         PersonService ps = new PersonService();
-
         Person p1 = ps.createPerson();
         Person p2 = ps.createPerson();
         Person p3 = ps.createPerson();
         Person p4 = ps.createPerson();
-
         System.out.println("peso ieal = 0 --- debajo del ideal = -1 --- sobre peso = 1 ");
-        
         int imcP1 = ps.calcularIMC(p1);
-        System.out.println(p1.getName() + " " + imcP1);
-        
+        System.out.println(p1.getName() + " " + imcP1);        
         int imcP2 = ps.calcularIMC(p2);
-        System.out.println(p2.getName()+" "+ imcP2);
-        
+        System.out.println(p2.getName()+" "+ imcP2);        
         int imcP3 = ps.calcularIMC(p3);
         System.out.println(p3.getName()+" "+ imcP3);
-        
         int imcP4 = ps.calcularIMC(p4);
         System.out.println(p4.getName()+" "+ imcP4);
-        
-        
         System.out.println("Es mayor de edad?");
-        
         boolean mayorP1 = ps.esMayor(p1);
         System.out.println(p1.getName() + " - " + mayorP1);
-        
         boolean mayorP2 = ps.esMayor(p2);
         System.out.println(p2.getName() + " - " + mayorP2);
-        
         boolean mayorP3 = ps.esMayor(p3);
         System.out.println(p3.getName() + " - " + mayorP3);
-        
         boolean mayorP4 = ps.esMayor(p4);
         System.out.println(p4.getName() + " - " + mayorP4);
-        
-        
-        
         int[] imcsPerson = { imcP1, imcP2, imcP3, imcP4 }; 
         boolean[] mayores = { mayorP1, mayorP2, mayorP3, mayorP4 };
-        
         porcentajePeso(imcsPerson);
         porcentajeEdad(mayores);
+        */
+        
+        
+        NIF n = new NIF();
+        
+        NifService ns = new NifService();
+        
+        ns.crearNif(n);
+        ns.mostrar(n);
+        
+        
+        
         
     }
     
-    
+    // METODOS EJERCICIO 3
     public static void porcentajePeso( int[] gorditos ){
         
         double debajo = 0;
@@ -110,7 +108,6 @@ public class ServicesClasses {
         System.out.println("El "+totalIdeal+"% esta en su peso ideal");
         
     }
-    
     public static void porcentajeEdad( boolean[] edades){
         
         double menores = 0;
