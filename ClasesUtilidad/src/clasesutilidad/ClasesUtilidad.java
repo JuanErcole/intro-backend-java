@@ -13,7 +13,11 @@ public class ClasesUtilidad {
         
         // cs.mostrarVocales(c1);
         // cs.invertirFrase(c1);
+        // cs.vecesRepetida(c1);
+        // cs.compararLong(c1);
+        // cs.unirFrases(c1);
         
-    }
+        
+    }   
     
 }
