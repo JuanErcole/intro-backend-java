@@ -16,7 +16,9 @@ public class ClasesUtilidad {
         // cs.vecesRepetida(c1);
         // cs.compararLong(c1);
         // cs.unirFrases(c1);
-        
+        // cs.reemplazar(c1);
+        // boolean contieneLetra = cs.contiene(c1);
+        // System.out.println(contieneLetra);
         
     }   
     

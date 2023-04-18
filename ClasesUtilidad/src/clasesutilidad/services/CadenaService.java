@@ -97,6 +97,28 @@ public class CadenaService {
         System.out.println("La frase concatenada es: "+nuevaFrase);
         
     }
+    
+    public void reemplazar(Cadena c){
+        
+        Scanner read = new Scanner(System.in);
+        
+        System.out.println("Ingrese una letra");
+        char letraUser = read.next().charAt(0);
+        
+        String frase = c.getFrase();
+        
+        String nvaFrase = frase.replace('a', letraUser);
+        System.out.println("La nueva frase es: "+nvaFrase);
+    }
+    
+    public boolean contiene(Cadena c){
+        String frase = c.getFrase();
+        Scanner read = new Scanner(System.in);
+        System.out.println("Ingrese una letra");
+        String letraUser = read.nextLine();
+        
+        return frase.contains(letraUser);
+    }
 
 }
 
