@@ -2,18 +2,19 @@ package clasesutilidad;
 
 import clasesutilidad.entities.Cadena;
 import clasesutilidad.entities.ParDeNumeros;
+import clasesutilidad.services.ArrayService;
 import clasesutilidad.services.CadenaService;
+import clasesutilidad.services.FechaService;
 import clasesutilidad.services.ParDeNumerosService;
-
+import java.util.Date;
 
 public class ClasesUtilidad {
 
     public static void main(String[] args) {
-        
-        float[] arrayA = new float[50];
-        float[] arrayB = new float[20];
-        
-        
+
+        double[] arrayA = new double[50];
+        double[] arrayB = new double[20];
+
         // Cadena c1 = new Cadena("Hola Mundo");
         // CadenaService cs = new CadenaService();
         // cs.mostrarVocales(c1);
@@ -32,9 +33,24 @@ public class ClasesUtilidad {
         // ps.calcularPow(p);
         // ps.calcularRaiz(p);
         
+        /*
+        ArrayService as = new ArrayService();
+        as.inicializarA(arrayA);
+        as.mostrar(arrayA);
+        as.ordenar(arrayA);
+        as.inicializarB(arrayA, arrayB);
+        as.mostrar(arrayA);
+        as.mostrar(arrayB);        
+        */
         
+        FechaService fs = new FechaService();
         
+        Date fechaNacimiento = fs.fechaNac();
+        Date fechaActual = fs.fechaActual();
+        fs.edad(fechaNacimiento, fechaActual);
         
-    }   
-    
+
+
+    }
+
 }

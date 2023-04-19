@@ -37,7 +37,7 @@ public class ArrayService {
         
         System.arraycopy(arrayA, 0, arrayB, 0, 9);
         
-        Arrays.fill(arrayB, 10, largo -1, 0.5);
+        Arrays.fill(arrayB, 9, largo, 0.5);
     }
 
 }
