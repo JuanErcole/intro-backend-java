@@ -1,10 +1,12 @@
 package clasesutilidad;
 
 import clasesutilidad.entities.Cadena;
+import clasesutilidad.entities.Curso;
 import clasesutilidad.entities.ParDeNumeros;
 import clasesutilidad.entities.Person;
 import clasesutilidad.services.ArrayService;
 import clasesutilidad.services.CadenaService;
+import clasesutilidad.services.CursoService;
 import clasesutilidad.services.FechaService;
 import clasesutilidad.services.ParDeNumerosService;
 import clasesutilidad.services.PersonService;
@@ -60,7 +62,10 @@ public class ClasesUtilidad {
         ps.mostrarPersona(p);        
         */
         
+        CursoService cs = new CursoService();
         
+        Curso c = cs.crearCurso();
+        cs.calcularGanancia(c);
         
 
 
