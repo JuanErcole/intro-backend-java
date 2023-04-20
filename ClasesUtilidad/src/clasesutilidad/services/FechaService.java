@@ -26,6 +26,7 @@ public class FechaService {
     }
 
     public void edad(Date fechaNac, Date fechaAct) {
+
         Date fechaNacimiento = fechaNac;
         Date fechaActual = fechaAct;
 
