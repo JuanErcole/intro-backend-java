@@ -62,10 +62,14 @@ public class ClasesUtilidad {
         ps.mostrarPersona(p);        
         */
         
+        /*
         CursoService cs = new CursoService();
-        
         Curso c = cs.crearCurso();
-        cs.calcularGanancia(c);
+        cs.calcularGanancia(c);        
+        */
+        
+        
+
         
 
 
